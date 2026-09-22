@@ -503,7 +503,7 @@ export default function Page() {
     <>
       <main className="mx-auto flex min-h-svh max-w-xl flex-col justify-center gap-12 px-6 py-20 md:py-32">
         <header style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          <h1 className="text-base leading-relaxed md:text-lg">Brett Maldicas</h1>
+          <h1 className="text-base leading-relaxed md:text-lg">Sebastian Orlanda</h1>
           <p className="text-base leading-relaxed md:text-lg">
             Brand and web designer based in Manila, Philippines.
           </p>
