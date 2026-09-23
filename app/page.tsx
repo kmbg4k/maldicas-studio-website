@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState, useEffect, useRef, type CSSProperties } from "react"
 import { Mail, Linkedin, Instagram, X } from "lucide-react"
 
@@ -269,12 +270,24 @@ function Overlay({ projectKey, onClose }: { projectKey: string; onClose: () => v
 
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             {p.images.map((src, i) => (
-              <img
+              <div
                 key={i}
-                src={src}
-                alt={`${p.name} project image ${i + 1}`}
-                style={{ width: "100%", borderRadius: 8, objectFit: "cover" }}
-              />
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  aspectRatio: "4 / 3",
+                  borderRadius: 8,
+                  overflow: "hidden",
+                }}
+              >
+                <Image
+                  src={src}
+                  alt={`${p.name} project image ${i + 1}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 672px"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
             ))}
           </div>
         </div>
