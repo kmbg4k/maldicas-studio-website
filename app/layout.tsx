@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
-import { Space_Mono } from "next/font/google"
+import { IBM_Plex_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
-const mono = Space_Mono({ subsets: ["latin"] })
+const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: "400"})
 
 export const metadata: Metadata = {
   title: "Brett Maldicas — Brand & Web Designer, Manila",
