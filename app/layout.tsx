@@ -6,14 +6,14 @@ import "./globals.css"
 const mono = IBM_Plex_Mono({ subsets: ["latin"], weight: "400"})
 
 export const metadata: Metadata = {
-  title: "Brett Maldicas — Brand & Web Designer, Manila",
+  title: "Sebastian Orlanda — Brand & Web Designer, Manila",
   description:
     "Brand and web designer based in Manila, Philippines. I help growing businesses build clear visual systems and websites that earn customer trust.",
   openGraph: {
-    title: "Brett Maldicas — Brand & Web Designer",
+    title: "Sebastian Orlanda — Brand & Web Designer",
     description: "Clear visual systems and websites that earn customer trust.",
     url: "https://maldicas-studio.work",
-    siteName: "Brett Maldicas",
+    siteName: "Sebastian Orlanda",
     type: "website",
   },
 }
